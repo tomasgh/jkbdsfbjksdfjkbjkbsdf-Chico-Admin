@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E06614A24099FFA00652323 /* DeleteFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06614924099FFA00652323 /* DeleteFiles.swift */; };
+		0E066172240F5EBE00652323 /* Pods_Chico_Admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F53756A0A5E43B65BAA6C2 /* Pods_Chico_Admin.framework */; };
+		0E16B25423FCD2C5009B4EC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E16B25323FCD2C5009B4EC4 /* GoogleService-Info.plist */; };
 		0E2DD2E623EA961700FAB37D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DD2E523EA961700FAB37D /* AppDelegate.swift */; };
 		0E2DD2E823EA961700FAB37D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DD2E723EA961700FAB37D /* SceneDelegate.swift */; };
 		0E2DD2EA23EA961700FAB37D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DD2E923EA961700FAB37D /* ViewController.swift */; };
@@ -14,28 +17,23 @@
 		0E2DD2F023EA961700FAB37D /* Chico_Admin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DD2EE23EA961700FAB37D /* Chico_Admin.xcdatamodeld */; };
 		0E2DD2F223EA961B00FAB37D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2DD2F123EA961B00FAB37D /* Assets.xcassets */; };
 		0E2DD2F523EA961B00FAB37D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2DD2F323EA961B00FAB37D /* LaunchScreen.storyboard */; };
-		0E2DD30023EA961B00FAB37D /* Chico_AdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DD2FF23EA961B00FAB37D /* Chico_AdminTests.swift */; };
-		0E2DD30B23EA961B00FAB37D /* Chico_AdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DD30A23EA961B00FAB37D /* Chico_AdminUITests.swift */; };
+		0E2DD32A23EA973E00FAB37D /* HomeToNode.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0E2DD31A23EA973E00FAB37D /* HomeToNode.gpx */; };
+		0E2DD32B23EA973E00FAB37D /* CscuRings.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0E2DD31B23EA973E00FAB37D /* CscuRings.gpx */; };
+		0E2DD32C23EA973E00FAB37D /* HomeAlly.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0E2DD31C23EA973E00FAB37D /* HomeAlly.gpx */; };
+		0E2DD32D23EA973E00FAB37D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DD31D23EA973E00FAB37D /* Extensions.swift */; };
+		0E2DD32E23EA973E00FAB37D /* Chico_Admin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DD31E23EA973E00FAB37D /* Chico_Admin.xcdatamodeld */; };
+		0E2DD34523EA97D400FAB37D /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DD34223EA97D400FAB37D /* Cell.swift */; };
+		0E2DD34623EA97D400FAB37D /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DD34323EA97D400FAB37D /* Spots.swift */; };
+		0E2DD34923EA97EE00FAB37D /* ChicoStateLoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DD34823EA97EE00FAB37D /* ChicoStateLoc.swift */; };
+		0EC5976823FCE1DF003DF781 /* AddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC5976723FCE1DF003DF781 /* AddingViewController.swift */; };
+		0EE9442123FE176E00B1BFC8 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE9442023FE176E00B1BFC8 /* DescriptionViewController.swift */; };
+		0EEA192523FF69FA00AC447C /* DownloadFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA192423FF69FA00AC447C /* DownloadFiles.swift */; };
+		0EEA192724044F5E00AC447C /* EditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA192624044F5E00AC447C /* EditingViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0E2DD2FC23EA961B00FAB37D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0E2DD2DA23EA961700FAB37D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0E2DD2E123EA961700FAB37D;
-			remoteInfo = "Chico Admin";
-		};
-		0E2DD30723EA961B00FAB37D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0E2DD2DA23EA961700FAB37D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0E2DD2E123EA961700FAB37D;
-			remoteInfo = "Chico Admin";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		0E06614924099FFA00652323 /* DeleteFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFiles.swift; sourceTree = "<group>"; };
+		0E16B25323FCD2C5009B4EC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E2DD2E223EA961700FAB37D /* Chico Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chico Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2DD2E523EA961700FAB37D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E2DD2E723EA961700FAB37D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,12 +43,38 @@
 		0E2DD2F123EA961B00FAB37D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E2DD2F423EA961B00FAB37D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E2DD2F623EA961B00FAB37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E2DD2FB23EA961B00FAB37D /* Chico AdminTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chico AdminTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2DD2FF23EA961B00FAB37D /* Chico_AdminTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chico_AdminTests.swift; sourceTree = "<group>"; };
 		0E2DD30123EA961B00FAB37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E2DD30623EA961B00FAB37D /* Chico AdminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chico AdminUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2DD30A23EA961B00FAB37D /* Chico_AdminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chico_AdminUITests.swift; sourceTree = "<group>"; };
 		0E2DD30C23EA961B00FAB37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E2DD31823EA967B00FAB37D /* Chico Admin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Chico Admin.entitlements"; sourceTree = "<group>"; };
+		0E2DD31A23EA973E00FAB37D /* HomeToNode.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HomeToNode.gpx; sourceTree = "<group>"; };
+		0E2DD31B23EA973E00FAB37D /* CscuRings.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CscuRings.gpx; sourceTree = "<group>"; };
+		0E2DD31C23EA973E00FAB37D /* HomeAlly.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HomeAlly.gpx; sourceTree = "<group>"; };
+		0E2DD31D23EA973E00FAB37D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0E2DD31F23EA973E00FAB37D /* Chico_Admin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chico_Admin.xcdatamodel; sourceTree = "<group>"; };
+		0E2DD33823EA977200FAB37D /* Trinity.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = Trinity.gpx; sourceTree = "<group>"; };
+		0E2DD33923EA977200FAB37D /* route4.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = route4.gpx; sourceTree = "<group>"; };
+		0E2DD33B23EA977200FAB37D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text; name = Base; path = Base.lproj/route3.gpx; sourceTree = "<group>"; };
+		0E2DD33C23EA977200FAB37D /* route1.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = route1.gpx; sourceTree = "<group>"; };
+		0E2DD33D23EA977200FAB37D /* route2.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = route2.gpx; sourceTree = "<group>"; };
+		0E2DD33E23EA977600FAB37D /* route3.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = route3.gpx; sourceTree = "<group>"; };
+		0E2DD34223EA97D400FAB37D /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		0E2DD34323EA97D400FAB37D /* Spots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
+		0E2DD34823EA97EE00FAB37D /* ChicoStateLoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChicoStateLoc.swift; sourceTree = "<group>"; };
+		0EC5976723FCE1DF003DF781 /* AddingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingViewController.swift; sourceTree = "<group>"; };
+		0EE9442023FE176E00B1BFC8 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		0EEA192423FF69FA00AC447C /* DownloadFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadFiles.swift; sourceTree = "<group>"; };
+		0EEA192624044F5E00AC447C /* EditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingViewController.swift; sourceTree = "<group>"; };
+		2A80867F7FA01A3F1D899863 /* Pods-Chico Admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chico Admin.debug.xcconfig"; path = "Target Support Files/Pods-Chico Admin/Pods-Chico Admin.debug.xcconfig"; sourceTree = "<group>"; };
+		353910B6E6CAFBC8B57EB878 /* Pods-Chico Admin-Chico AdminUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chico Admin-Chico AdminUITests.debug.xcconfig"; path = "Target Support Files/Pods-Chico Admin-Chico AdminUITests/Pods-Chico Admin-Chico AdminUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		40F53756A0A5E43B65BAA6C2 /* Pods_Chico_Admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chico_Admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C5784CA605B5048A54D16F /* Pods_Chico_AdminTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chico_AdminTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63872C77FA1F456D1CFB821B /* Pods-Chico AdminTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chico AdminTests.release.xcconfig"; path = "Target Support Files/Pods-Chico AdminTests/Pods-Chico AdminTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A463E0666B021EF2BD1DF7C /* Pods-Chico Admin-Chico AdminUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chico Admin-Chico AdminUITests.release.xcconfig"; path = "Target Support Files/Pods-Chico Admin-Chico AdminUITests/Pods-Chico Admin-Chico AdminUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9A7941D66DFD4C6D3176953B /* Pods-Chico Admin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chico Admin.release.xcconfig"; path = "Target Support Files/Pods-Chico Admin/Pods-Chico Admin.release.xcconfig"; sourceTree = "<group>"; };
+		B83677CB662BBD1F0496C85B /* Pods_Chico_Admin_Chico_AdminUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chico_Admin_Chico_AdminUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F576B54921C5145A0674D00D /* Pods-Chico AdminTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chico AdminTests.debug.xcconfig"; path = "Target Support Files/Pods-Chico AdminTests/Pods-Chico AdminTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,20 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0E2DD2F823EA961B00FAB37D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0E2DD30323EA961B00FAB37D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0E066172240F5EBE00652323 /* Pods_Chico_Admin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,8 @@
 				0E2DD2FE23EA961B00FAB37D /* Chico AdminTests */,
 				0E2DD30923EA961B00FAB37D /* Chico AdminUITests */,
 				0E2DD2E323EA961700FAB37D /* Products */,
+				75A48EEEA5B7866187C888EF /* Pods */,
+				FEDB8E103054821704B497F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,8 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				0E2DD2E223EA961700FAB37D /* Chico Admin.app */,
-				0E2DD2FB23EA961B00FAB37D /* Chico AdminTests.xctest */,
-				0E2DD30623EA961B00FAB37D /* Chico AdminUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,14 +112,25 @@
 		0E2DD2E423EA961700FAB37D /* Chico Admin */ = {
 			isa = PBXGroup;
 			children = (
-				0E2DD2E523EA961700FAB37D /* AppDelegate.swift */,
-				0E2DD2E723EA961700FAB37D /* SceneDelegate.swift */,
-				0E2DD2E923EA961700FAB37D /* ViewController.swift */,
-				0E2DD2EB23EA961700FAB37D /* Main.storyboard */,
-				0E2DD2F123EA961B00FAB37D /* Assets.xcassets */,
-				0E2DD2F323EA961B00FAB37D /* LaunchScreen.storyboard */,
-				0E2DD2F623EA961B00FAB37D /* Info.plist */,
+				0E2DD31C23EA973E00FAB37D /* HomeAlly.gpx */,
+				0E2DD31A23EA973E00FAB37D /* HomeToNode.gpx */,
+				0E2DD33C23EA977200FAB37D /* route1.gpx */,
+				0E2DD33923EA977200FAB37D /* route4.gpx */,
+				0E2DD33D23EA977200FAB37D /* route2.gpx */,
 				0E2DD2EE23EA961700FAB37D /* Chico_Admin.xcdatamodeld */,
+				0E2DD33A23EA977200FAB37D /* route3.gpx */,
+				0E2DD33E23EA977600FAB37D /* route3.gpx */,
+				0E2DD33823EA977200FAB37D /* Trinity.gpx */,
+				0E2DD31E23EA973E00FAB37D /* Chico_Admin.xcdatamodeld */,
+				0E2DD31B23EA973E00FAB37D /* CscuRings.gpx */,
+				0E16B25323FCD2C5009B4EC4 /* GoogleService-Info.plist */,
+				0E2DD2F623EA961B00FAB37D /* Info.plist */,
+				0E2DD2F123EA961B00FAB37D /* Assets.xcassets */,
+				0E2DD34A23EA982E00FAB37D /* Service */,
+				0E2DD34123EA97C600FAB37D /* Models */,
+				0E2DD34023EA97BA00FAB37D /* Location */,
+				0E2DD33F23EA97AA00FAB37D /* View */,
+				0E2DD31823EA967B00FAB37D /* Chico Admin.entitlements */,
 			);
 			path = "Chico Admin";
 			sourceTree = "<group>";
@@ -131,6 +153,71 @@
 			path = "Chico AdminUITests";
 			sourceTree = "<group>";
 		};
+		0E2DD33F23EA97AA00FAB37D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E2DD2E923EA961700FAB37D /* ViewController.swift */,
+				0EC5976723FCE1DF003DF781 /* AddingViewController.swift */,
+				0EE9442023FE176E00B1BFC8 /* DescriptionViewController.swift */,
+				0E2DD2EB23EA961700FAB37D /* Main.storyboard */,
+				0E2DD2F323EA961B00FAB37D /* LaunchScreen.storyboard */,
+				0EEA192624044F5E00AC447C /* EditingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E2DD34023EA97BA00FAB37D /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				0E2DD34823EA97EE00FAB37D /* ChicoStateLoc.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		0E2DD34123EA97C600FAB37D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0E2DD34223EA97D400FAB37D /* Cell.swift */,
+				0E2DD34323EA97D400FAB37D /* Spots.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0E2DD34A23EA982E00FAB37D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0E2DD31D23EA973E00FAB37D /* Extensions.swift */,
+				0E2DD2E523EA961700FAB37D /* AppDelegate.swift */,
+				0E2DD2E723EA961700FAB37D /* SceneDelegate.swift */,
+				0EEA192423FF69FA00AC447C /* DownloadFiles.swift */,
+				0E06614924099FFA00652323 /* DeleteFiles.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		75A48EEEA5B7866187C888EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A80867F7FA01A3F1D899863 /* Pods-Chico Admin.debug.xcconfig */,
+				9A7941D66DFD4C6D3176953B /* Pods-Chico Admin.release.xcconfig */,
+				353910B6E6CAFBC8B57EB878 /* Pods-Chico Admin-Chico AdminUITests.debug.xcconfig */,
+				9A463E0666B021EF2BD1DF7C /* Pods-Chico Admin-Chico AdminUITests.release.xcconfig */,
+				F576B54921C5145A0674D00D /* Pods-Chico AdminTests.debug.xcconfig */,
+				63872C77FA1F456D1CFB821B /* Pods-Chico AdminTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FEDB8E103054821704B497F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40F53756A0A5E43B65BAA6C2 /* Pods_Chico_Admin.framework */,
+				B83677CB662BBD1F0496C85B /* Pods_Chico_Admin_Chico_AdminUITests.framework */,
+				46C5784CA605B5048A54D16F /* Pods_Chico_AdminTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E2DD30F23EA961B00FAB37D /* Build configuration list for PBXNativeTarget "Chico Admin" */;
 			buildPhases = (
+				E7C6993B800F3DB03A183B1E /* [CP] Check Pods Manifest.lock */,
 				0E2DD2DE23EA961700FAB37D /* Sources */,
 				0E2DD2DF23EA961700FAB37D /* Frameworks */,
 				0E2DD2E023EA961700FAB37D /* Resources */,
+				6E685EA577F75BCDA4B267DD /* [CP] Embed Pods Frameworks */,
+				5FE317594273368FC51D7A8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -150,42 +240,6 @@
 			productName = "Chico Admin";
 			productReference = 0E2DD2E223EA961700FAB37D /* Chico Admin.app */;
 			productType = "com.apple.product-type.application";
-		};
-		0E2DD2FA23EA961B00FAB37D /* Chico AdminTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0E2DD31223EA961B00FAB37D /* Build configuration list for PBXNativeTarget "Chico AdminTests" */;
-			buildPhases = (
-				0E2DD2F723EA961B00FAB37D /* Sources */,
-				0E2DD2F823EA961B00FAB37D /* Frameworks */,
-				0E2DD2F923EA961B00FAB37D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0E2DD2FD23EA961B00FAB37D /* PBXTargetDependency */,
-			);
-			name = "Chico AdminTests";
-			productName = "Chico AdminTests";
-			productReference = 0E2DD2FB23EA961B00FAB37D /* Chico AdminTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0E2DD30523EA961B00FAB37D /* Chico AdminUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0E2DD31523EA961B00FAB37D /* Build configuration list for PBXNativeTarget "Chico AdminUITests" */;
-			buildPhases = (
-				0E2DD30223EA961B00FAB37D /* Sources */,
-				0E2DD30323EA961B00FAB37D /* Frameworks */,
-				0E2DD30423EA961B00FAB37D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0E2DD30823EA961B00FAB37D /* PBXTargetDependency */,
-			);
-			name = "Chico AdminUITests";
-			productName = "Chico AdminUITests";
-			productReference = 0E2DD30623EA961B00FAB37D /* Chico AdminUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -199,14 +253,6 @@
 				TargetAttributes = {
 					0E2DD2E123EA961700FAB37D = {
 						CreatedOnToolsVersion = 11.2.1;
-					};
-					0E2DD2FA23EA961B00FAB37D = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 0E2DD2E123EA961700FAB37D;
-					};
-					0E2DD30523EA961B00FAB37D = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 0E2DD2E123EA961700FAB37D;
 					};
 				};
 			};
@@ -224,8 +270,6 @@
 			projectRoot = "";
 			targets = (
 				0E2DD2E123EA961700FAB37D /* Chico Admin */,
-				0E2DD2FA23EA961B00FAB37D /* Chico AdminTests */,
-				0E2DD30523EA961B00FAB37D /* Chico AdminUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,69 +280,99 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E2DD2F523EA961B00FAB37D /* LaunchScreen.storyboard in Resources */,
+				0E2DD32B23EA973E00FAB37D /* CscuRings.gpx in Resources */,
+				0E2DD32C23EA973E00FAB37D /* HomeAlly.gpx in Resources */,
 				0E2DD2F223EA961B00FAB37D /* Assets.xcassets in Resources */,
+				0E2DD32A23EA973E00FAB37D /* HomeToNode.gpx in Resources */,
 				0E2DD2ED23EA961700FAB37D /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0E2DD2F923EA961B00FAB37D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0E2DD30423EA961B00FAB37D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0E16B25423FCD2C5009B4EC4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FE317594273368FC51D7A8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chico Admin/Pods-Chico Admin-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chico Admin/Pods-Chico Admin-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chico Admin/Pods-Chico Admin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E685EA577F75BCDA4B267DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chico Admin/Pods-Chico Admin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chico Admin/Pods-Chico Admin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chico Admin/Pods-Chico Admin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7C6993B800F3DB03A183B1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chico Admin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E2DD2DE23EA961700FAB37D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EEA192724044F5E00AC447C /* EditingViewController.swift in Sources */,
+				0E2DD32D23EA973E00FAB37D /* Extensions.swift in Sources */,
+				0E06614A24099FFA00652323 /* DeleteFiles.swift in Sources */,
 				0E2DD2EA23EA961700FAB37D /* ViewController.swift in Sources */,
+				0E2DD34523EA97D400FAB37D /* Cell.swift in Sources */,
 				0E2DD2E623EA961700FAB37D /* AppDelegate.swift in Sources */,
 				0E2DD2F023EA961700FAB37D /* Chico_Admin.xcdatamodeld in Sources */,
+				0E2DD32E23EA973E00FAB37D /* Chico_Admin.xcdatamodeld in Sources */,
 				0E2DD2E823EA961700FAB37D /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0E2DD2F723EA961B00FAB37D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0E2DD30023EA961B00FAB37D /* Chico_AdminTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0E2DD30223EA961B00FAB37D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0E2DD30B23EA961B00FAB37D /* Chico_AdminUITests.swift in Sources */,
+				0E2DD34923EA97EE00FAB37D /* ChicoStateLoc.swift in Sources */,
+				0EE9442123FE176E00B1BFC8 /* DescriptionViewController.swift in Sources */,
+				0EEA192523FF69FA00AC447C /* DownloadFiles.swift in Sources */,
+				0E2DD34623EA97D400FAB37D /* Spots.swift in Sources */,
+				0EC5976823FCE1DF003DF781 /* AddingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0E2DD2FD23EA961B00FAB37D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0E2DD2E123EA961700FAB37D /* Chico Admin */;
-			targetProxy = 0E2DD2FC23EA961B00FAB37D /* PBXContainerItemProxy */;
-		};
-		0E2DD30823EA961B00FAB37D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0E2DD2E123EA961700FAB37D /* Chico Admin */;
-			targetProxy = 0E2DD30723EA961B00FAB37D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0E2DD2EB23EA961700FAB37D /* Main.storyboard */ = {
@@ -315,6 +389,14 @@
 				0E2DD2F423EA961B00FAB37D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0E2DD33A23EA977200FAB37D /* route3.gpx */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E2DD33B23EA977200FAB37D /* Base */,
+			);
+			name = route3.gpx;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -436,10 +518,16 @@
 		};
 		0E2DD31023EA961B00FAB37D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A80867F7FA01A3F1D899863 /* Pods-Chico Admin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Chico Admin/Chico Admin.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = ZWJ9FEA2P8;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				INFOPLIST_FILE = "Chico Admin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,6 +535,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tomasgalvanhuerta.Chico-Admin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,10 +545,16 @@
 		};
 		0E2DD31123EA961B00FAB37D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A7941D66DFD4C6D3176953B /* Pods-Chico Admin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Chico Admin/Chico Admin.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = ZWJ9FEA2P8;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				INFOPLIST_FILE = "Chico Admin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -465,92 +562,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tomasgalvanhuerta.Chico-Admin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		0E2DD31323EA961B00FAB37D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZWJ9FEA2P8;
-				INFOPLIST_FILE = "Chico AdminTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tomasgalvanhuerta.Chico-AdminTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chico Admin.app/Chico Admin";
-			};
-			name = Debug;
-		};
-		0E2DD31423EA961B00FAB37D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZWJ9FEA2P8;
-				INFOPLIST_FILE = "Chico AdminTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tomasgalvanhuerta.Chico-AdminTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chico Admin.app/Chico Admin";
-			};
-			name = Release;
-		};
-		0E2DD31623EA961B00FAB37D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZWJ9FEA2P8;
-				INFOPLIST_FILE = "Chico AdminUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tomasgalvanhuerta.Chico-AdminUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Chico Admin";
-			};
-			name = Debug;
-		};
-		0E2DD31723EA961B00FAB37D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZWJ9FEA2P8;
-				INFOPLIST_FILE = "Chico AdminUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tomasgalvanhuerta.Chico-AdminUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Chico Admin";
 			};
 			name = Release;
 		};
@@ -575,24 +591,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E2DD31223EA961B00FAB37D /* Build configuration list for PBXNativeTarget "Chico AdminTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0E2DD31323EA961B00FAB37D /* Debug */,
-				0E2DD31423EA961B00FAB37D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0E2DD31523EA961B00FAB37D /* Build configuration list for PBXNativeTarget "Chico AdminUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0E2DD31623EA961B00FAB37D /* Debug */,
-				0E2DD31723EA961B00FAB37D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
@@ -602,6 +600,16 @@
 				0E2DD2EF23EA961700FAB37D /* Chico_Admin.xcdatamodel */,
 			);
 			currentVersion = 0E2DD2EF23EA961700FAB37D /* Chico_Admin.xcdatamodel */;
+			path = Chico_Admin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		0E2DD31E23EA973E00FAB37D /* Chico_Admin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0E2DD31F23EA973E00FAB37D /* Chico_Admin.xcdatamodel */,
+			);
+			currentVersion = 0E2DD31F23EA973E00FAB37D /* Chico_Admin.xcdatamodel */;
 			path = Chico_Admin.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

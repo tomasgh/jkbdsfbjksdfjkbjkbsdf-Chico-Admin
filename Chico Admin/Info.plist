@@ -20,6 +20,14 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Use your location to determine the focus point</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Use your location to determine the focus point</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Your location will be used to zoom in the beginning</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Use your location to determine the focus point</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -50,8 +58,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
