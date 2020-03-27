@@ -142,12 +142,14 @@ extension ViewController{
             guard let sn = snap.value as? [String: Any] else {return}
             self.mapView.removeAnnotations(self.mapView.annotations)
             self.mapView.removeOverlays(self.mapView.overlays)
+            self.Allspot = []
             self.DownloadingThis(snap: sn, of: "Building")
             self.DownloadingThis(snap: sn, of: "Stairs")
             self.DownloadingThis(snap: sn, of: "Blue Lights")
             self.DownloadingThis(snap: sn, of: "Other")
             self.DownloadingThis(snap: sn, of: "Bus Station")
             self.DownloadingThis(snap: sn, of: "Warning")
+            
         }
     }
     

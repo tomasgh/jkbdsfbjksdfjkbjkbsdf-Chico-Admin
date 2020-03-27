@@ -31,10 +31,10 @@ class DescriptionViewController: UIViewController {
     @IBOutlet weak var textField: UITextView!
     
     @IBAction func ConfirmButton(_ sender: UIButton){
-        addItems()
         if let editS = editingSpot{
             deleteFileAt(type: editS.type!, group: editS.group!, id: editS.id!)
         }
+        addItems()
         performSegue(withIdentifier: "unwind", sender: self)
     }
     

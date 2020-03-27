@@ -35,8 +35,23 @@ class AddingViewController: UIViewController {
         performSegue(withIdentifier: "LastStepSegue", sender: self)
     }
     
+    @IBOutlet weak var DeletButton: UIButton!
     @IBAction func deleteMessage(_ sender: Any) {
         
+        let alert = UIAlertController(title: "Delete Location", message: "Are you sure you want to delete the location?", preferredStyle: .alert)
+        let action1 = UIAlertAction(title: "Yes", style: .destructive) { (alert) in
+            self.deleteFileAt(type: self.editingSpot!.type!, group: self.editingSpot!.id!, id: self.editingSpot!.id!)
+            self.dismiss(animated: true, completion: nil)
+        }
+        alert.addAction(action1)
+        
+        let action2 = UIAlertAction(title: "No Thank you", style: .cancel) { (alert) in
+            
+        }
+        alert.addAction(action2)
+        self.present(alert, animated: true) {
+            
+        }
         
     }
     
@@ -85,6 +100,12 @@ class AddingViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         setupPicker()
         editingSetup()
+        if editingSpot == nil{
+            DeletButton.isHidden = true
+        }
+        else{
+            DeletButton.isHidden = false
+        }
     }
     func editingSetup(){
         if editingSpot != nil{
