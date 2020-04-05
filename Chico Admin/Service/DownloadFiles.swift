@@ -16,20 +16,6 @@ import MapKit
 extension ViewController{
     
     
-    //    func singleGrabData(Laditude: Int, Longitude: Int){
-    //           self.ref.child("Written Reviews").child(Laditude.description).child(Longitude.description).observeSingleEvent(of: .value) { (snapchat) in
-    //               guard let snap = snapchat.value as? [String:Any] else {return}
-    //               for snappy in snap{
-    //                   if let dict = snappy.value as? [String:Any],
-    //                       let longitude = dict["Longitude"] as? Double,
-    //                       let uid = dict["uid"] as? String,
-    //                       let ladditude = dict["Laditude"] as? Double,
-    //                       let timeStamp = dict["TimeStamp"] as? Int,
-    //                       let fireId = dict["fireId"] as? String,
-    //                       let banned = dict["banned"] as? Bool,
-    //                       let friend = dict["friends"] as?
-    //let type = ["Building", "Stairs", "Bus Station","Warning", "Other"]
-    
     func DownloadingThis(snap: [String: Any],of types: String){
         if let buildings = snap[types] as? [String:Any]{
             for type in buildings{
@@ -48,43 +34,9 @@ extension ViewController{
                             self.addinggroup(singleGroup: type.key)
                             mkann.coordinate = coordinate
                             mkann.title = name
-                            mkann.subtitle = sp
+                            mkann.subtitle = types
                             self.mapView.addAnnotation(mkann)
-                            /*
-                            if mapView.overlays.contains(where: { (overlay) -> Bool in
-                                return overlay.subtitle == sp
-                            }){//If it exists
-                                let index1 = Allspot.firstIndex { (spot) -> Bool in
-                                    spot.id == sp
-                                }
-                                let index2 = mapView.overlays.firstIndex { (overlay) -> Bool in
-                                    overlay.subtitle == sp
-                                }
-                                var spot = Spot(plain_Lad: laditude, longitude: longitude, name: name, type: types, groupABB: type.key, id: sp)
-                                spot.info = info
-                                Allspot[index1!] = spot
-                                let mkann = MKPointAnnotation()
-                                let coordinate = CLLocationCoordinate2D(latitude: laditude, longitude: longitude)
-                                self.addinggroup(singleGroup: type.key)
-                                mkann.coordinate = coordinate
-                                mkann.title = name
-                                mkann.subtitle = sp
-                                let refernceann = mapView.annotations[index2!]
-                                mapView.removeAnnotation(refernceann)
-                                self.mapView.addAnnotation(mkann)
-                            }
-                            else{//If it does not exist
-                                var spot = Spot(plain_Lad: laditude, longitude: longitude, name: name, type: types, groupABB: type.key, id: sp)
-                                spot.info = info
-                                Allspot.append(spot)
-                                let mkann = MKPointAnnotation()
-                                let coordinate = CLLocationCoordinate2D(latitude: laditude, longitude: longitude)
-                                self.addinggroup(singleGroup: type.key)
-                                mkann.coordinate = coordinate
-                                mkann.title = name
-                                mkann.subtitle = sp
-                                self.mapView.addAnnotation(mkann)
-                            }*/
+                            
                             
                             
                         }

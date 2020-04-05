@@ -48,43 +48,20 @@ struct JSpot: Codable{
 }
 
 struct Spot{
-    let laditude: Double?
-    let longitude:Double?
-    let altitude: Double?
-    let image: String?
+    var laditude: Double?
+    var longitude:Double?
+    var altitude: Double?
+    var image: String?
     //let node: SCNNode?
     var type: String?
     var group: String?
-    let name: String
+    var name: String
     var info: String? = nil
    // let elevation: Double?
-    let cllocation: CLLocation
+    var cllocation: CLLocation
     var id: String?
     //var portalImage: UIImage?
-    
-    
-//    init(Image_Lad laditude: Double, longitude: Double, altitude: Double, image: String?, name: String, elevation: Double?) {
-//        self.laditude = laditude
-//        self.longitude = longitude
-//        self.altitude = altitude
-//        self.image  = image
-//        self.name = name
-//        self.elevation = elevation
-//        self.node = nil
-//        self.cllocation = CLLocation(latitude: self.laditude!, longitude: self.longitude!)
-//        self.portalImage = nil
-//    }
-//    init(Node_Lad laditude: Double, longitude: Double, altitude: Double, mynode: SCNNode?, name: String, elevation: Double?) {
-//        self.laditude = laditude
-//        self.longitude = longitude
-//        self.altitude = altitude
-//        self.node  = mynode
-//        self.name = name
-//        self.image = nil
-//        self.elevation = elevation
-//        self.cllocation = CLLocation(latitude: self.laditude!, longitude: self.longitude!)
-//        self.portalImage = nil
-//    }
+
     init(plain_Lad laditude: Double, longitude: Double, name: String, type: String, groupABB: String, id: String) {
         self.laditude = laditude
         self.longitude = longitude

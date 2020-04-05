@@ -11,6 +11,7 @@ import MapKit
 import CoreLocation
 import FirebaseAuth
 import FirebaseUI
+import SwiftUI
 
 
 class ViewController: UIViewController {
@@ -23,112 +24,31 @@ class ViewController: UIViewController {
     var editingSpot: Spot?
     var group = ["Other"]
     var Allspot: [Spot] = []
+    var isLocationOn = false
+    
     
     @IBOutlet weak var mapView: MKMapView!
- /*
-    func addLocation(){
-        let alert = UIAlertController(title: "New Location", message: "Fill out the name", preferredStyle: .alert)
-        
-        alert.addTextField { (text) in
-            text.placeholder = "Name"
-        }
-        alert.addTextField { (text) in
-            text.placeholder = "Laditude"
-            text.keyboardType = .numbersAndPunctuation
-        }
-        alert.addTextField { (text) in
-            text.placeholder = "Longitude"
-            text.keyboardType = .numbersAndPunctuation
-        }
-        let bathroom = UIAlertAction(title: "Bathroom", style: .default) { (action) in
-            guard let laditudetxt = alert.textFields?[1].text else {return}
-            guard let longitudetxt = alert.textFields?[2].text else {return}
-            guard let nametxt = alert.textFields?[0].text else {return}
-            
-            guard let laditude = Double(laditudetxt) else {let warning = UIAlertController(title: "Wanring", message: "Message not clear: Laditude", preferredStyle: .alert)
-                let action = UIAlertAction(title: "Yes Sir!", style: .default, handler: nil)
-                warning.addAction(action)
-                self.present(warning, animated: true, completion: nil)
-                return}
-            guard let longitude = Double(longitudetxt) else {let warning = UIAlertController(title: "Wanring", message: "Message not clear: Longitude", preferredStyle: .alert)
-                let action = UIAlertAction(title: "Yes Sir!", style: .default, handler: nil)
-                warning.addAction(action)
-                self.present(warning, animated: true, completion: nil)
-                return}
-            
-            let type = "Bathroom"
-            let center = CLLocationCoordinate2D(latitude: laditude, longitude: longitude)
-            let circleOverlay = MKCircle(center: center, radius: 10)
-            self.mapView.addOverlay(circleOverlay)
-        }
-        let building = UIAlertAction(title: "Building", style: .default) { (action) in
-            guard let laditudetxt = alert.textFields?[2].text else {return}
-            guard let longitudetxt = alert.textFields?[1].text else {return}
-            guard let nametxt = alert.textFields?[0].text else {return}
-            
-            guard let laditude = Double(laditudetxt) else {let warning = UIAlertController(title: "Wanring", message: "Message not clear: Laditude", preferredStyle: .alert)
-                let action = UIAlertAction(title: "Yes Sir!", style: .default, handler: nil)
-                warning.addAction(action)
-                self.present(warning, animated: true, completion: nil)
-                return}
-            guard let longitude = Double(longitudetxt) else {let warning = UIAlertController(title: "Wanring", message: "Message not clear: Longitude", preferredStyle: .alert)
-                let action = UIAlertAction(title: "Yes Sir!", style: .default, handler: nil)
-                warning.addAction(action)
-                self.present(warning, animated: true, completion: nil)
-                return}
-            
-            let type = "Building"
-            
-            let center = CLLocationCoordinate2D(latitude: laditude, longitude: longitude)
-            let circleOverlay = MKCircle(center: center, radius: 10)
-            self.mapView.addOverlay(circleOverlay)
-        }
-        let stairs = UIAlertAction(title: "Notice", style: .default) { (action) in
-            guard let laditudetxt = alert.textFields?[2].text else {return}
-            guard let longitudetxt = alert.textFields?[1].text else {return}
-            guard let nametxt = alert.textFields?[0].text else {return}
-            
-            guard let laditude = Double(laditudetxt) else {let warning = UIAlertController(title: "Wanring", message: "Message not clear: Laditude", preferredStyle: .alert)
-                let action = UIAlertAction(title: "Yes Sir!", style: .default, handler: nil)
-                warning.addAction(action)
-                self.present(warning, animated: true, completion: nil)
-                return}
-            guard let longitude = Double(longitudetxt) else {let warning = UIAlertController(title: "Wanring", message: "Message not clear: Longitude", preferredStyle: .alert)
-                let action = UIAlertAction(title: "Yes Sir!", style: .default, handler: nil)
-                warning.addAction(action)
-                self.present(warning, animated: true, completion: nil)
-                return}
-            
-            let type = "Notice"
-            
-            let center = CLLocationCoordinate2D(latitude: laditude, longitude: longitude)
-            let circleOverlay = MKCircle(center: center, radius: 10)
-            self.mapView.addOverlay(circleOverlay)
-        }
-        alert.addAction(bathroom)
-        alert.addAction(building)
-        alert.addAction(stairs)
-        
-        present(alert, animated: true, completion: nil)
-    }
-*/
+    
     
     @IBAction func Longpress(_ sender: UILongPressGestureRecognizer) {
         if sender.state == .began{
             let touchpoint = sender.location(in: self.mapView)
             let location = mapView.convert(touchpoint, toCoordinateFrom: self.mapView)
-            self.laditude = location.latitude
-            self.longitude = location.longitude
-            performSegue(withIdentifier: "InfoSegue", sender: self)
+            let thislocation = CLLocation(latitude: location.latitude, longitude: location.longitude).coordinate
+            self.isLocationOn = true
+            let data = DataLocation()
+            data.Laditude = thislocation.latitude
+            data.Longitude = thislocation.longitude
+            data.groups = group
+            print(self.isLocationOn)
+            let vc = UIHostingController(rootView: AddingLocation(newSpot: data, mylocation: thislocation, loctionsisOn: isLocationOn, dismissAction: {
+                self.dismiss(animated: true, completion: nil)
+            }))
+            present(vc, animated: true)
+            
+            //performSegue(withIdentifier: "InfoSegue", sender: self)
         }
-        
-        
 
-//        let annotation = MKPointAnnotation()
-//        annotation.title = "Latitude: \(location.latitude)"
-//        annotation.subtitle = "Longitude: \(location.longitude)"
-//        annotation.coordinate = location
-//        mapView.addAnnotation(annotation)
     }
     
     
@@ -156,17 +76,13 @@ class ViewController: UIViewController {
         }
         
     }
-    
-    
-    
     func setMapLocation(){
         //MapView.delegate = self
         mapView.layer.masksToBounds = true;
         mapView.showsScale = true
-        mapView.showsUserLocation = true
         mapView.showsBuildings = true
         let location = CLLocationCoordinate2D(latitude: 39.7278, longitude: -121.8459)
-        let span = MKCoordinateSpan(latitudeDelta: 0.025, longitudeDelta: 0.025)
+        let span = MKCoordinateSpan(latitudeDelta: 0.0015, longitudeDelta: 0.0015)
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
         mapView.centerCoordinate = location
@@ -219,15 +135,35 @@ extension ViewController: CLLocationManagerDelegate{
     
 }
 extension ViewController: MKMapViewDelegate{
+    func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
+        
+    }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        
-        guard let key = view.annotation?.subtitle else {return}
-        let myspot = Allspot.filter({ (pop) -> Bool in
-            return pop.id == key
+        let alert = UIAlertController(title: "Delete", message: "Are you sure you want to delete this?", preferredStyle: .alert)
+        let delete = UIAlertAction(title: "Yes Homie", style: .destructive) { (alert) in
+            let index = self.Allspot.first { (spot) -> Bool in
+                let lad = spot.cllocation.coordinate == view.annotation?.coordinate
+                print(lad)
+                if lad{
+                    return true
+                }
+                else{
+                    return false
+                }
+            }            
+            if index != nil{
+                self.ref.child((index?.type)!).child((index?.group)!).child((index?.id)!).removeValue()
+            }
+            
+        }
+        let nodeelete = UIAlertAction(title: "No, My Mistake", style: .default, handler: nil)
+        alert.addAction(delete)
+        alert.addAction(nodeelete)
+        self.present(alert, animated: true, completion: {
+            view.isSelected = false
         })
-        editingSpot = myspot.first
-        performSegue(withIdentifier: "InfoSegue", sender: self)
+        
         
     }
     
@@ -243,22 +179,22 @@ extension ViewController: MKMapViewDelegate{
         return MKOverlayRenderer()
     }
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        guard annotation is MKPointAnnotation else { return nil }
-        
-        let identifier = "Annotation"
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-        
-        if annotationView == nil {
-            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            annotationView!.canShowCallout = true
-        } else {
-            annotationView!.annotation = annotation
-            
+        guard annotation is MKPointAnnotation else {return nil}
+        let annotationse = MKAnnotationView(annotation: annotation, reuseIdentifier: annotation.subtitle!!)
+        annotationse.image = UIImage(named: annotation.subtitle!!)?.resized(to: CGSize(width: 15.0, height: 15.0))
+        return annotationse
+    }
+}
+
+extension CLLocationCoordinate2D: Equatable{
+    public static func == (lhs: CLLocationCoordinate2D, rhs: CLLocationCoordinate2D) -> Bool {
+        if lhs.latitude == rhs.latitude && lhs.longitude == rhs.longitude{
+            return true
         }
-        
-        return annotationView
+        else{
+            return false
+        }
     }
     
     
 }
-

@@ -10,6 +10,8 @@
 		0E06614A24099FFA00652323 /* DeleteFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06614924099FFA00652323 /* DeleteFiles.swift */; };
 		0E066172240F5EBE00652323 /* Pods_Chico_Admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F53756A0A5E43B65BAA6C2 /* Pods_Chico_Admin.framework */; };
 		0E16B25423FCD2C5009B4EC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E16B25323FCD2C5009B4EC4 /* GoogleService-Info.plist */; };
+		0E24DD372437E7EA0006D48A /* SmallMapViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E24DD362437E7EA0006D48A /* SmallMapViewSwiftUI.swift */; };
+		0E24DD3C243954AD0006D48A /* PageViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E24DD3B243954AD0006D48A /* PageViewSwiftUI.swift */; };
 		0E2DD2E623EA961700FAB37D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DD2E523EA961700FAB37D /* AppDelegate.swift */; };
 		0E2DD2E823EA961700FAB37D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DD2E723EA961700FAB37D /* SceneDelegate.swift */; };
 		0E2DD2EA23EA961700FAB37D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DD2E923EA961700FAB37D /* ViewController.swift */; };
@@ -29,11 +31,14 @@
 		0EE9442123FE176E00B1BFC8 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE9442023FE176E00B1BFC8 /* DescriptionViewController.swift */; };
 		0EEA192523FF69FA00AC447C /* DownloadFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA192423FF69FA00AC447C /* DownloadFiles.swift */; };
 		0EEA192724044F5E00AC447C /* EditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA192624044F5E00AC447C /* EditingViewController.swift */; };
+		0EEF85AD24346A5D007BBFC5 /* AddingLocationSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF85AC24346A5D007BBFC5 /* AddingLocationSwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E06614924099FFA00652323 /* DeleteFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFiles.swift; sourceTree = "<group>"; };
 		0E16B25323FCD2C5009B4EC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0E24DD362437E7EA0006D48A /* SmallMapViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallMapViewSwiftUI.swift; sourceTree = "<group>"; };
+		0E24DD3B243954AD0006D48A /* PageViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewSwiftUI.swift; sourceTree = "<group>"; };
 		0E2DD2E223EA961700FAB37D /* Chico Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chico Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2DD2E523EA961700FAB37D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E2DD2E723EA961700FAB37D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +71,7 @@
 		0EE9442023FE176E00B1BFC8 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		0EEA192423FF69FA00AC447C /* DownloadFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadFiles.swift; sourceTree = "<group>"; };
 		0EEA192624044F5E00AC447C /* EditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingViewController.swift; sourceTree = "<group>"; };
+		0EEF85AC24346A5D007BBFC5 /* AddingLocationSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingLocationSwiftUI.swift; sourceTree = "<group>"; };
 		2A80867F7FA01A3F1D899863 /* Pods-Chico Admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chico Admin.debug.xcconfig"; path = "Target Support Files/Pods-Chico Admin/Pods-Chico Admin.debug.xcconfig"; sourceTree = "<group>"; };
 		353910B6E6CAFBC8B57EB878 /* Pods-Chico Admin-Chico AdminUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chico Admin-Chico AdminUITests.debug.xcconfig"; path = "Target Support Files/Pods-Chico Admin-Chico AdminUITests/Pods-Chico Admin-Chico AdminUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		40F53756A0A5E43B65BAA6C2 /* Pods_Chico_Admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chico_Admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +95,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E24DD382438ED9F0006D48A /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				0EEF85AC24346A5D007BBFC5 /* AddingLocationSwiftUI.swift */,
+				0E24DD362437E7EA0006D48A /* SmallMapViewSwiftUI.swift */,
+				0E24DD3B243954AD0006D48A /* PageViewSwiftUI.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		0E2DD2D923EA961700FAB37D = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				0E2DD2E923EA961700FAB37D /* ViewController.swift */,
+				0E24DD382438ED9F0006D48A /* SwiftUI */,
 				0EC5976723FCE1DF003DF781 /* AddingViewController.swift */,
 				0EE9442023FE176E00B1BFC8 /* DescriptionViewController.swift */,
 				0E2DD2EB23EA961700FAB37D /* Main.storyboard */,
@@ -356,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EEA192724044F5E00AC447C /* EditingViewController.swift in Sources */,
+				0E24DD372437E7EA0006D48A /* SmallMapViewSwiftUI.swift in Sources */,
 				0E2DD32D23EA973E00FAB37D /* Extensions.swift in Sources */,
 				0E06614A24099FFA00652323 /* DeleteFiles.swift in Sources */,
 				0E2DD2EA23EA961700FAB37D /* ViewController.swift in Sources */,
@@ -365,8 +383,10 @@
 				0E2DD32E23EA973E00FAB37D /* Chico_Admin.xcdatamodeld in Sources */,
 				0E2DD2E823EA961700FAB37D /* SceneDelegate.swift in Sources */,
 				0E2DD34923EA97EE00FAB37D /* ChicoStateLoc.swift in Sources */,
+				0E24DD3C243954AD0006D48A /* PageViewSwiftUI.swift in Sources */,
 				0EE9442123FE176E00B1BFC8 /* DescriptionViewController.swift in Sources */,
 				0EEA192523FF69FA00AC447C /* DownloadFiles.swift in Sources */,
+				0EEF85AD24346A5D007BBFC5 /* AddingLocationSwiftUI.swift in Sources */,
 				0E2DD34623EA97D400FAB37D /* Spots.swift in Sources */,
 				0EC5976823FCE1DF003DF781 /* AddingViewController.swift in Sources */,
 			);
